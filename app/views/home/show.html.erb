@@ -1,6 +1,9 @@
 <!-- append view css to head -->
 <% content_for :header do -%>
   <%= stylesheet_link_tag 'bootstrap.min' %>
+  <%= stylesheet_link_tag 'home' %>
+  <%= javascript_include_tag 'typeahead' %>
+  <%= javascript_include_tag 'bootstrap.min' %>
 <% end -%>
 
 <div id="headerwrap">
@@ -12,28 +15,28 @@
       </div>
     </div><!-- row -->
   </div><!-- container -->
-</div><!-- headerwrap -->
+</div>
 
 <div class="container w">
   <div class="row centered">
     <br><br>
-    <div class="col-sm-4">
-      <i class="fa fa-heart"></i>
+    <div class="col-lg-4">
+      <i class="fa fa-bar-chart"></i>
       <h4>LOREM</h4>
       <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
-    </div><!-- col-sm-4 -->
+    </div><!-- col-lg-4 -->
 
-    <div class="col-sm-4">
-      <i class="fa fa-laptop"></i>
+    <div class="col-lg-4">
+      <i class="fa fa-edit"></i>
       <h4>LOREM</h4>
       <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
-    </div><!-- col-sm-4 -->
+    </div><!-- col-lg-4 -->
 
-    <div class="col-sm-4">
-      <i class="fa fa-trophy"></i>
+    <div class="col-lg-4">
+      <i class="fa fa-info"></i>
       <h4>LOREM</h4>
       <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
-    </div><!-- col-sm-4 -->
+    </div><!-- col-lg-4 -->
   </div><!-- row -->
   <br>
   <br>
