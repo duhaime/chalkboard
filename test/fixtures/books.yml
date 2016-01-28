@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  estc_cit_number: MyString
+  author_name: MyString
+  author_titles_etc: MyString
+  author_dates: MyString
+  corporate_author: MyString
+  corporate_author_specific: MyString
+  main_title: MyString
+  continuation_of_title: MyString
+  publication_place: MyString
+  imprint: MyString
+  imprint_date: MyString
+  pagination: MyString
+  illustrations: MyString
+  format: MyString
+  pub_year: MyString
+  bibliographic_citations: MyString
+
+two:
+  estc_cit_number: MyString
+  author_name: MyString
+  author_titles_etc: MyString
+  author_dates: MyString
+  corporate_author: MyString
+  corporate_author_specific: MyString
+  main_title: MyString
+  continuation_of_title: MyString
+  publication_place: MyString
+  imprint: MyString
+  imprint_date: MyString
+  pagination: MyString
+  illustrations: MyString
+  format: MyString
+  pub_year: MyString
+  bibliographic_citations: MyString
