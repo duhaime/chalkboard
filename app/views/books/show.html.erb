@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Estc cit number:</strong>
+  <%= @book.estc_cit_number %>
+</p>
+
+<p>
+  <strong>Author name:</strong>
+  <%= @book.author_name %>
+</p>
+
+<p>
+  <strong>Author titles etc:</strong>
+  <%= @book.author_titles_etc %>
+</p>
+
+<p>
+  <strong>Author dates:</strong>
+  <%= @book.author_dates %>
+</p>
+
+<p>
+  <strong>Corporate author:</strong>
+  <%= @book.corporate_author %>
+</p>
+
+<p>
+  <strong>Corporate author specific:</strong>
+  <%= @book.corporate_author_specific %>
+</p>
+
+<p>
+  <strong>Main title:</strong>
+  <%= @book.main_title %>
+</p>
+
+<p>
+  <strong>Continuation of title:</strong>
+  <%= @book.continuation_of_title %>
+</p>
+
+<p>
+  <strong>Publication place:</strong>
+  <%= @book.publication_place %>
+</p>
+
+<p>
+  <strong>Imprint:</strong>
+  <%= @book.imprint %>
+</p>
+
+<p>
+  <strong>Imprint date:</strong>
+  <%= @book.imprint_date %>
+</p>
+
+<p>
+  <strong>Pagination:</strong>
+  <%= @book.pagination %>
+</p>
+
+<p>
+  <strong>Illustrations:</strong>
+  <%= @book.illustrations %>
+</p>
+
+<p>
+  <strong>Format:</strong>
+  <%= @book.format %>
+</p>
+
+<p>
+  <strong>Pub year:</strong>
+  <%= @book.pub_year %>
+</p>
+
+<p>
+  <strong>Bibliographic citations:</strong>
+  <%= @book.bibliographic_citations %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>

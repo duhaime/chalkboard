@@ -1,0 +1,81 @@
+<%= form_for(@book) do |f| %>
+  <% if @book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+      <ul>
+      <% @book.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :estc_cit_number %><br>
+    <%= f.text_field :estc_cit_number %>
+  </div>
+  <div class="field">
+    <%= f.label :author_name %><br>
+    <%= f.text_field :author_name %>
+  </div>
+  <div class="field">
+    <%= f.label :author_titles_etc %><br>
+    <%= f.text_field :author_titles_etc %>
+  </div>
+  <div class="field">
+    <%= f.label :author_dates %><br>
+    <%= f.text_field :author_dates %>
+  </div>
+  <div class="field">
+    <%= f.label :corporate_author %><br>
+    <%= f.text_field :corporate_author %>
+  </div>
+  <div class="field">
+    <%= f.label :corporate_author_specific %><br>
+    <%= f.text_field :corporate_author_specific %>
+  </div>
+  <div class="field">
+    <%= f.label :main_title %><br>
+    <%= f.text_field :main_title %>
+  </div>
+  <div class="field">
+    <%= f.label :continuation_of_title %><br>
+    <%= f.text_field :continuation_of_title %>
+  </div>
+  <div class="field">
+    <%= f.label :publication_place %><br>
+    <%= f.text_field :publication_place %>
+  </div>
+  <div class="field">
+    <%= f.label :imprint %><br>
+    <%= f.text_field :imprint %>
+  </div>
+  <div class="field">
+    <%= f.label :imprint_date %><br>
+    <%= f.text_field :imprint_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pagination %><br>
+    <%= f.text_field :pagination %>
+  </div>
+  <div class="field">
+    <%= f.label :illustrations %><br>
+    <%= f.text_field :illustrations %>
+  </div>
+  <div class="field">
+    <%= f.label :format %><br>
+    <%= f.text_field :format %>
+  </div>
+  <div class="field">
+    <%= f.label :pub_year %><br>
+    <%= f.text_field :pub_year %>
+  </div>
+  <div class="field">
+    <%= f.label :bibliographic_citations %><br>
+    <%= f.text_field :bibliographic_citations %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
