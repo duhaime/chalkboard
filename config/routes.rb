@@ -1,4 +1,6 @@
 Chalkboard::Application.routes.draw do
+  resources :books
+
   root "home#show"
   get "home/show" => "home#show", as: "home"
  
