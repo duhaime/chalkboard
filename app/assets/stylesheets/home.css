@@ -1,20 +1,17 @@
-/* FONTS */
+/* Fonts */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
 
-/* Global Styles */
+/* Body */
 
 body {
-  background-color: #f2f2f2;
-    font-family: "Lato";
-    font-weight: 300;
-    font-size: 16px;
-    color: #555;
-
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-    
-    margin-top: 70px;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 70px;
 }
 
 /* Titles */
@@ -23,7 +20,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     color: #333;
 }
-
 
 /* Paragraph & Typographic */
 p {
@@ -63,7 +59,6 @@ a:after {
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
-
 /* Navbar */
 .navbar {
   font-weight: 800;
@@ -78,11 +73,11 @@ a:after {
 }
 
 .navbar-inverse .navbar-nav > .active > a {
-  background: #FF8670;
+  background: #7F95DC;
 }
 
 .navbar-inverse .navbar-nav > .active > a:hover{
-  background-color: #FF745C;
+  background-color: #9FAFE5;
 }
 
 .navbar-inverse .navbar-brand {
@@ -93,7 +88,6 @@ a:after {
 }
 
 .navbar-inverse .navbar-brand i {
-  color: #FF8670;
   font-size: 22px;
   letter-spacing: 1px;
 }
@@ -128,6 +122,16 @@ a:after {
   letter-spacing: 3px;
 }
 
+/* use media query to set smaller font
+   on header text if device is mobile */ 
+@media (max-width: 768px) {
+  #headerwrap h1 {
+    font-size: 45px;
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+}
+
 #headerwrap h2 {
   color: white;
   font-size: 40px;
@@ -143,8 +147,7 @@ a:after {
   letter-spacing: 2px;
 }
 
-/****** Three Column Information *****/
-
+/* Three Column Icons & Information */
 .w {
   padding-top: 35px;
 }
@@ -153,7 +156,9 @@ a:after {
   font-weight: 700;
 }
 
-.w i {
-  color: #FF8670;
+/* Font Awesome Icons */
+i.fa {
+  color: #7F95DC;
   font-size: 30px;
 }
+
