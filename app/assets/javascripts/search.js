@@ -38,7 +38,12 @@ $(document).ready(function() {
       source: books.ttAdapter()
   })
 
+  // log selected record
   $('input.typeahead').on('typeahead:selected', function (e, datum) {
+    console.log(datum);
+  });
+  // log selected record
+  $('input.typeahead').on('change', function (e, datum) {
     console.log(datum);
   });
 
