@@ -7,7 +7,7 @@ $(document).ready(function() {
       // The controller of this path will do a search through
       // Apache Solr and it returns the data in the required format.
       // The %QUERY will be replaced by the Bloodhound engine
-      // with the search terms we typed in the search box.
+      // with the search terms a user types in the search box.
       url: '/search/query?q=%QUERY'
     }
   })
@@ -37,14 +37,5 @@ $(document).ready(function() {
       // The source of the dataset is the Bloodhound engine.
       source: books.ttAdapter()
   })
-
-  // log selected record
-  $('input.typeahead').on('typeahead:selected', function (e, datum) {
-    console.log(datum);
-  });
-  // log selected record
-  $('input.typeahead').on('change', function (e, datum) {
-    console.log(datum);
-  });
 
 });
