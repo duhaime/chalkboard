@@ -191,7 +191,7 @@ i.fa {
   width: 65%;
 }
 
-#search-box-background form {
+#search-box-background .btn {
   display: inline-block;
   float: right;
 }
@@ -204,6 +204,12 @@ i.fa {
   margin-top: 12.5px;
   opacity: 1;
   outline: 0;
+  color: #ffffff;
+}
+
+a#submit-search {
+  padding-top: 9.5px;
+  font-size: 14px;
 }
 
 /* Typeahead */
