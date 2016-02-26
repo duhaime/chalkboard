@@ -1,57 +1,27 @@
-<h1>Listing books</h1>
+<div class="page-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <fieldset>
+          <legend>Matching Records</legend>
+          <ul>
+            <% @books.each do |book| %>
+              <div class="book-result">
+                <%= link_to book.estc_cit_number, book %>
+                <%= book.main_title %>
+                <% if book.author_name != "NULL" %>
+                  <%= book.author_name %>
+                <% end %>
+                <%= book.pub_year %>
+              </div>
+              <br>
+            <% end %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Estc cit number</th>
-      <th>Author name</th>
-      <th>Author titles etc</th>
-      <th>Author dates</th>
-      <th>Corporate author</th>
-      <th>Corporate author specific</th>
-      <th>Main title</th>
-      <th>Continuation of title</th>
-      <th>Publication place</th>
-      <th>Imprint</th>
-      <th>Imprint date</th>
-      <th>Pagination</th>
-      <th>Illustrations</th>
-      <th>Format</th>
-      <th>Pub year</th>
-      <th>Bibliographic citations</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+          </ul>
 
-  <tbody>
-    <% @books.each do |book| %>
-      <tr>
-        <td><%= book.estc_cit_number %></td>
-        <td><%= book.author_name %></td>
-        <td><%= book.author_titles_etc %></td>
-        <td><%= book.author_dates %></td>
-        <td><%= book.corporate_author %></td>
-        <td><%= book.corporate_author_specific %></td>
-        <td><%= book.main_title %></td>
-        <td><%= book.continuation_of_title %></td>
-        <td><%= book.publication_place %></td>
-        <td><%= book.imprint %></td>
-        <td><%= book.imprint_date %></td>
-        <td><%= book.pagination %></td>
-        <td><%= book.illustrations %></td>
-        <td><%= book.format %></td>
-        <td><%= book.pub_year %></td>
-        <td><%= book.bibliographic_citations %></td>
-        <td><%= link_to 'Show', book %></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Book', new_book_path %>
+          <%= link_to 'New Book', new_book_path %>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>

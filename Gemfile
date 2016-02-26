@@ -30,6 +30,11 @@ gem 'jbuilder', '~> 1.2'
 # Add Sunspot gem for search capability
 gem 'sunspot_rails'
 
+# Add development solr server
+group :development do
+  gem 'sunspot_solr'
+end
+
 # Add Twitter typeahead for typeahead support
 gem 'twitter-typeahead-rails'
 
