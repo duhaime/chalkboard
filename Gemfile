@@ -35,8 +35,11 @@ group :development do
   gem 'sunspot_solr'
 end
 
-# Add Twitter typeahead for typeahead support
-gem 'twitter-typeahead-rails'
+# Add Twitter typeahead for typeahead support using particular version
+gem 'twitter-typeahead-rails'#, '0.10.5'
+
+# Add progress_bar to show progress bar of indexing status
+gem 'progress_bar'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
