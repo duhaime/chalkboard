@@ -1,4 +1,5 @@
 Chalkboard::Application.routes.draw do
+  devise_for :users
   resources :books
 
   root "home#show"
