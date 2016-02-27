@@ -211,22 +211,19 @@ a#submit-search {
 }
 
 /* Typeahead */
+/* set the width of the typeahead box */
 #typeahead-container {
   display: inline-block;
-  width: calc(100% - 88.7px);
+  width: calc(97% - 88.7px);
   opacity: 1;
-}
-
-/* exposes the background color on
-   the left and right of the typeahead */
-.twitter-typeahead {
-  width: 96%;
 }
 
 /* make each fill its parent entirely; 
    all inherit from twitter-typeahead,
    so set smaller width there to shrink 
    master width */
+#typeahead-field,
+.twitter-typeahead,
 .tt-hint, 
 .tt-input, 
 .tt-menu { 
@@ -310,7 +307,7 @@ a#submit-search {
 .search .fa-search { 
   position: absolute;
   top: 24px;
-  left: 3.4%;
+  left: 2.5%;
   font-size: 15px;
   color:#9d9d9d;
 }
