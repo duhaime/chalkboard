@@ -6,6 +6,9 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
+# For Rails 4.2, set a queueing backend
+#config.active_job.queue_adapter = :delayed_job
+
 module Chalkboard
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
