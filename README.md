@@ -10,3 +10,5 @@ foreground: `rake sunspot:solr:run`
 Index records in SOLR database:   
 `rake sunspot:solr:reindex`
 
+Set the development database password to facilitate confirmation email delivery
+sed -i '' 's/PASSWORD_PLACEHOLDER/{{TheRealPassword}}/g' "config/environments/development.rb"
