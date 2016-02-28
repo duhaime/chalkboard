@@ -15,10 +15,13 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+# Use font awesome icons
+gem "font-awesome-rails"
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-# Use jquery as the JavaScript library
+# Use jQuery
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -49,6 +52,9 @@ end
 # add devise for authentication
 gem 'devise', '3.4.1'
 
+# allow users to be redirected before their confirmation email is sent
+gem 'delayed_job_active_record'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -60,6 +66,3 @@ gem 'devise', '3.4.1'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
-# Use font awesome icons
-gem "font-awesome-rails"
