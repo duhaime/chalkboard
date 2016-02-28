@@ -4,6 +4,10 @@
     <div id="messages">
       <%= render 'layouts/messages' %>
     </div>
-    <%= yield %>
+    <div class="<%='container' unless current_page?(root_path) %>">
+      <div class="<%='page-content' unless current_page?(root_path) %>">
+        <%= yield %>
+      </div>
+    </div>
   </div>
 </body>

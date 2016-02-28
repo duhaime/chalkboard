@@ -1,27 +1,23 @@
-<div class="page-content">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <fieldset>
-          <legend>Matching Records</legend>
-          <ul>
-            <% @books.each do |book| %>
-              <div class="book-result">
-                <%= link_to book.estc_cit_number, book %>
-                <%= book.main_title %>
-                <% if book.author_name != "NULL" %>
-                  <%= book.author_name %>
-                <% end %>
-                <%= book.pub_year %>
-              </div>
-              <br>
+<div class="row">
+  <div class="col-md-12">
+    <fieldset>
+      <legend>Matching Records</legend>
+      <ul>
+        <% @books.each do |book| %>
+          <div class="book-result">
+            <%= link_to book.estc_cit_number, book %>
+            <%= book.main_title %>
+            <% if book.author_name != "NULL" %>
+              <%= book.author_name %>
             <% end %>
+            <%= book.pub_year %>
+          </div>
+          <br>
+        <% end %>
 
-          </ul>
+      </ul>
 
-          <%= link_to 'New Book', new_book_path %>
-        </fieldset>
-      </div>
-    </div>
+      <%= link_to 'New Book', new_book_path %>
+    </fieldset>
   </div>
 </div>
