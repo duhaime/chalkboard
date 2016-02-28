@@ -5,13 +5,14 @@ rake sunspot:solr:start
 # or foreground  
 rake sunspot:solr:run 
 
-# Initialize the database (requires non-public tsv)  
+# Initialize the database 
 rake db:drop db:create db:migrate db:seed  
 
 # Index records in SOLR database  
-rake sunspot:solr:reindex  
+rake sunspot:solr:reindex</code></pre> 
 
-# Set the development email client password  
+####Configure email client
+<pre><code># Set the development email client password  
 sed -i '' 's/PASSWORD_PLACEHOLDER/{{TheRealPassword}}/g' "config/environments/development.rb"  
 
 # If necessary, visit https://accounts.google.com/DisplayUnlockCaptcha
