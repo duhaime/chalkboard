@@ -77,4 +77,22 @@ Chalkboard::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # use SendGrid to send emails from heroku
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: 'yourdomain.com' }
+
+  # set email options
+  ActionMailer::Base.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :domain               => "gmail.com",
+    :user_name            => "douglas.duhaime@gmail.com",
+    :password             => "PASSWORD_PLACEHOLDER",
+    :authentication       => "plain",
+    :enable_starttls_auto => true
+    # uncomment this line and add comma to true above to skip ssl errors
+    #:openssl_verify_mode  => 'none'
+  }
+
 end
