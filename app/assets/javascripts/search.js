@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).on('page:change', function() {
   // Create a new Bloodhound suggestion engine.
   books = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
