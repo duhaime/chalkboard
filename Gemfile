@@ -39,7 +39,7 @@ group :development do
 end
 
 # Add Twitter typeahead for typeahead support using particular version
-gem 'twitter-typeahead-rails'#, '0.10.5'
+gem 'twitter-typeahead-rails'
 
 # Add progress_bar to show progress bar of indexing status
 gem 'progress_bar'
