@@ -13,8 +13,10 @@
 
 # Ignore database source data
 /db/estc/estc_streamlined_bib_data.tsv
-db/estc/estc_streamlined_bib_data.tsv
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore the solr index
+/solr/
