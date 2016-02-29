@@ -36,6 +36,10 @@ Chalkboard::Application.configure do
   # Set parameters to establish links in email views
   config.action_mailer.default_url_options = { host: '127.0.0.1', port: 3000 }
 
+  # setting config.serve_static_assets to false will prevent the server 
+  # from loading twice; see SO 8170039
+  config.serve_static_assets = false 
+
   # set email options
   ActionMailer::Base.smtp_settings = {
     :address              => "smtp.gmail.com",
